@@ -7,10 +7,11 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-function sayHello ("name") {
-    return "Hello" + name;
-
+function sayHello (name) {
+    return "Hello" + name + "!";
 }
+
+console.log(sayHello("Kalypso"));
 
 /**
  * TODO:
@@ -20,7 +21,7 @@ function sayHello ("name") {
  * console.log 'helloMessage' to check your work
  */
 
-function sayHello ("name")
+function sayHello("name")
 var helloMessage = sayHello(name: "Matt")
 console. log(helloMessage);
 
@@ -93,7 +94,7 @@ console.log(calculateTip(0.25, 25.50)
  * then display the dollar amount they should tip
  */
 var billtotal = Number(prompt(messsage; "What is your total bill?"));
-var tip = Number(prompt(message:"How much would you like to tip? Enter a number from 1-100"));
+var tip = Number(prompt("How much would you like to tip? Enter a number from 1-100"));
 var tipPercentage = tip/100;
 var tipDollar = calculateTip(tipPercentage, billTotal).toFixed( fractionDigits:2);
 
@@ -118,5 +119,10 @@ alert("You will need to tip $" + tipDollar);
 
  function applyDiscount(originalPrice, discountPercent){
      var discountAmount = originalPrice * discountPercent;
-     return (originalPrice - discountAmount).toFixed( fractionDigits: 2);
+     return price - (discount *100);
 }
+
+var originalPrice= 100;
+ var discountPercent = .2;
+
+ console.log(applyDiscount(originalPrice, discountPercent))
