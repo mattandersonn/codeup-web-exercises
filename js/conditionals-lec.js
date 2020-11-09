@@ -52,32 +52,46 @@ if(itemCost > currentBalance) {
 
 //TODO: Write an if statement that alerts "Sorry, game over" if numberOfLives is 0
 
-var numberOfLives = 0;
-if(numberOfLives === 0) {
+var numberOfLives = 3;
+
+numberOfLives--; //2
+numberOfLives--;  //1
+numberOfLives--;  //0
+
+(numberOfLives === 0) {
+
     alert("Sorry Game Over");
 }
 
 
 //TODO: Write an if statement that alerts "It's snowing!" if weather is equal to "snowing"
 
-var weather = "sunny";
-    if(weather === "snowing"){
-    alert("snowing");
+var weather = "snowing";
+    if(weather == "snowing"){
+    alert(" Its snowing");
 }
 
 
 
 //TODO: Write an if statement that alerts true if numberInput is greater than but not equal to 10
 
-var numberInput = 5;
+var numberInput = 11;
 if(numberInput > 10){
-    alert("true. greater than 10");
+    alert("true. greater than 10 but not equal to");
 }
 
 
 
 //TODO: EXTRA BONUS - Refactor each of the previous statements as functions.
 
+function checkForGameOver(numLives) {
+    if (numLives <= 0) {
+        alert("Your game is over");
+        return true;
+    }
+    alert("You are still alive!"); // numLives was greater than 0, so not over yet
+    return false;
+}
 
 
 
@@ -103,6 +117,7 @@ if(isAdmin){
     //show regular navbar
     console.log("regular user");
 }
+
 
 
 
@@ -204,7 +219,6 @@ function checkIfGameIsOver(numberOfLives) {
 // =============== IF / ELSE IF/ELSE STATEMENT EXAMPLES ================
 //TODO Together: Write an if/else if/else statement that alerts "It's snowing!" if weather is equal to "snowing", alerts "It's raining" if weather is equal to "raining", alerts "have a nice day" for all other case
 
-    var weather = "sunny";
     if (weather === "snowing") {
         alert("its snowing!");
     } else if (weather === "raining") {
@@ -279,7 +293,7 @@ var hasPermit = true;
 // 16 && has permit is true ==> ==> eligible for license
 
 if (userAge < 15){
-    alert(sorry, not eligible yet!);
+    alert(Sorry, Not Eligible Yet!);
   }  else {
     // 15 or older & you are eligible
     //nested statement
@@ -288,7 +302,7 @@ if (userAge < 15){
         alert("You are eligible for a permit!");
     } else if (userAge >= 16 && hasPermit ===true) {
         // user is greater than or equal to 16 AND they have a permit
-        alert("You can get A license! Yay!");
+        alert("You can get A license!");
     } else if (userAge >= 16 && hasPermit === false) {
         //user is greater than or equal to 16, but they have never had a permit
         alert("You need to get a permit first!");
