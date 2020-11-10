@@ -20,6 +20,16 @@
  * console.logging the function's return value
  */
 
+function analyzeColor(color) {
+    if (color === "blue"){
+        return "blue is color of sky";
+    } else if (color ==="red"); {
+        return "Strawberries are red";
+    } else {
+        return "idk anything about" + color;
+    }
+
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -33,11 +43,22 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
-var randomColor
+console.log(analyzeColor(randomColor));
+
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
+
+switch(color){
+    case "blue";
+        return "blue is color of sky";
+        break;
+    case "red";
+        return "Strawberries are red";
+    case
+}
+
 
 /**
  * TODO:
@@ -45,6 +66,11 @@ var randomColor
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+
+var userColor = prompt("Please  enter a color"){
+    alert(analyzeColor(userColor));
+}
+
 
 /* ########################################################################## */
 
@@ -55,7 +81,7 @@ var randomColor
  * no discount, if your lucky number is 1 you'll get a 10% discount, if it's 2,
  * the discount is 25%, if it's 3, 35%, if it's 4, 50%, and if it's 5 you'll get
  * all for free!.
- *
+
  * Write a function named `calculateTotal` that accepts a lucky number and total
  * amount, and returns the discounted price.
  *
@@ -68,6 +94,46 @@ var randomColor
  * return value.
  */
 
+function calculateTotal(luckyNumber,billTotal) {
+    switch (luckyNumber) {
+        case:
+            0
+            return billTotal
+        case:
+            1
+            return billTotal - billTotal * .1;
+        case:
+            2
+            return billTotal - billTotal * .25;
+        case:
+            3
+            return billTotal - billTotal * .35;
+        case:
+            4
+            return billTotal - billTotal * .50;
+        case:
+            5
+            return 0;
+        default:
+            return billTotal;
+    }
+
+
+}
+
+
+    //0 = no discount
+    // 1 = 10% off
+    //2 = 25% off
+    //3 = 35% off
+    //4 = 50% off
+    //5 = Free
+
+
+
+
+
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -77,6 +143,22 @@ var randomColor
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
+
+var luckyNumber = Math.floor(Math.random() * 6);
+var totalBill = prompt(  "What was your bill total?");
+
+console.log("The current data type of 'totalBill" is: " + (typeof totalBill));
+
+totalBill = parseFloat(totalBill);
+
+console.log("The data type of 'totalBill' after parseFloat is: " + (typeof totalBill));
+
+alert("Your lucky number was: " + luckyNumber);
+alert("Your price before discount was: $" + totalBill.toFixed(2));
+alert("your new total after discount is: $" + calculateTotal(luckyNumber, totalBill).toFixed(2));
+
+
+
 
 /**
  * TODO:
@@ -94,3 +176,25 @@ var randomColor
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+var enterOrNot = confirm("Do you want to enter a number");
+
+if (enterOrNot){
+    var userNumber = prompt("Please type in a number");
+    if (typeof parseFloat(userNumber)) === "number") {
+    userNumber = parseFloat(userNumber);
+    if(isEven(userNumber)) {
+        alert("Your number is even");
+    } else {
+        alert("Your number is odd");
+    }
+        alert("Your number plus 100 is: " + addHundred(userNumber));
+
+    if (isNegative (userNumber)) {
+        alert("Your number is negative";
+    } else {
+        alert ("Your number is positive")
+    } else {
+        alert("I'm sorry, that is not a number. Please refresh.");
+    }
+}
