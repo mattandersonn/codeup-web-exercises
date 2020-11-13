@@ -1,3 +1,7 @@
+
+
+
+
 //Prompt the user for an odd number between 1 and 50. Use a loop and a break statement to continue prompting the user if they enter invalid input.
 // Use a loop and the continue statement to output all the odd numbers between 1 and 50, except for the number the user entered.
 // Your output should look like this:
@@ -30,4 +34,8 @@
 // Here is an odd number: 45
 // Here is an odd number: 47
 // Here is an odd number: 49
+
+while(isNan)(userNum) || (userNum % 2 ===0)) (userNum < 1) || (userNum >50)){
+    var userNum = prompt( "Please enter an odd number between 1 and 50")
+}
 

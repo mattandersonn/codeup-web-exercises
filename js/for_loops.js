@@ -1,3 +1,4 @@
+
 // *Number two*
 
 function showMultiplicationTable(input){
