@@ -11,7 +11,8 @@ showMultiplicationTable(7)
 
 // *Number three*
 
-//var random = Math.floor(x:(Math.random() *3) + 1;
+//Use a for loop to generate 10 random numbers between 20-200
+// and output to the console whether each number is even or odd.
 for(var i = 0; i <10; i++){
     var random = Math.floor( (Math.random() * 180 + 20));
     if(random % 2 === 0) {
