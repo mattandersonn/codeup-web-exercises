@@ -2,13 +2,13 @@ body {
     background-color: darkred;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) and (max-width: 749px){
     body {
         background-color: darkolivegreen;
     }
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 750px) and (max-width: 800px){
     body{
         background-color: orangered;
     }
